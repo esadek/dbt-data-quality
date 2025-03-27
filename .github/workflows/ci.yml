@@ -19,8 +19,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install dbt-core dbt-duckdb
           mkdir -p ~/.dbt
-          cp integration_tests/profiles.yml ~/.dbt/profiles.yml
-          cat ~/.dbt/profiles.yml
+          cat integration_tests/profiles.yml
+          pwd
+          ls
 
       - name: Change directory
         run: cd integration_tests
