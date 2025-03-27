@@ -20,6 +20,7 @@ jobs:
           pip install dbt-core dbt-duckdb
           mkdir -p ~/.dbt
           cp integration_tests/profiles.yml ~/.dbt/profiles.yml
+          cat ~/.dbt/profiles.yml
 
       - name: Change directory
         run: cd integration_tests
@@ -28,7 +29,7 @@ jobs:
         run: dbt deps
 
       - name: Seed database
-        run: dbt seed --profiles-dir . --project-dir .
+        run: dbt seed
 
       - name: Run tests
-        run: dbt test --profiles-dir . --project-dir .
+        run: dbt test
