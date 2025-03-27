@@ -1,0 +1,9 @@
+version: 2
+
+seeds:
+  - name: users
+    columns:
+      - name: name
+      - name: age
+        tests:
+          - dbt_data_quality.positive
