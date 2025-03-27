@@ -1,5 +1,6 @@
 # dbt-data-quality
 
+[![GitHub Tag](https://img.shields.io/github/v/tag/esadek/dbt-data-quality)](https://github.com/esadek/dbt-data-quality/tags)
 [![GitHub License](https://img.shields.io/github/license/esadek/dbt-data-quality)](LICENSE)
 
 Data quality generic data tests for dbt
@@ -11,7 +12,7 @@ Add the package to `packages.yml` or `dependencies.yml`:
 ```yaml
 packages:
   - git: https://github.com/esadek/dbt-data-quality.git
-    revision: main
+    revision: 0.1.0
 ```
 
 Then run `dbt deps` to install the package.
