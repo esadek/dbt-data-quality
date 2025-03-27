@@ -2,6 +2,10 @@ name: CI
 
 on: push
 
+env:
+  DBT_PROFILES_DIR: ./integration_tests
+  DBT_PROJECT_DIR: ./integration_tests
+
 jobs:
   test:
     runs-on: ubuntu-latest
