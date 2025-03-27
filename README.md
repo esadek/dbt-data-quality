@@ -2,7 +2,7 @@
 
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/esadek/dbt-data-quality/ci.yml?label=tests)](https://github.com/esadek/dbt-data-quality/actions/workflows/ci.yml)
 [![GitHub Tag](https://img.shields.io/github/v/tag/esadek/dbt-data-quality)](https://github.com/esadek/dbt-data-quality/tags)
-[![GitHub License](https://img.shields.io/github/license/esadek/dbt-data-quality)](LICENSE)
+[![GitHub License](https://img.shields.io/github/license/esadek/dbt-data-quality?color=blue)](LICENSE)
 
 Data quality generic data tests for dbt
 
