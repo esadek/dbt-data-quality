@@ -1,0 +1,42 @@
+site_name: dbt-data-quality
+
+repo_name: dbt-data-quality
+repo_url: https://github.com/esadek/dbt-data-quality
+
+nav:
+  - Home: index.md
+  - getting_started.md
+
+theme:
+  name: material
+  icon:
+    logo: simple/dbt
+  features:
+    - navigation.footer
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
