@@ -28,7 +28,7 @@ jobs:
         run: dbt deps
 
       - name: Seed database
-        run: dbt seed
+        run: dbt seed --profiles-dir . --project-dir .
 
       - name: Run tests
-        run: dbt test
+        run: dbt test --profiles-dir . --project-dir .
