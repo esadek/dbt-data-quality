@@ -13,7 +13,7 @@ jobs:
         uses: astral-sh/setup-uv@v5
 
       - name: Install project
-        run: uv sync
+        run: uv sync --no-dev
 
       - name: Install just
         run: uv pip install rust-just
